@@ -1,0 +1,112 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./euclid-circular-b/Euclid\ Circular\ B\ Medium.ttf);
+}
+body{
+  margin: 0;
+  /* font-family: sans-serif; */
+  font-family: myFirstFont;
+  
+  /* background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+}
+.container{
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto; 
+  min-height: 100vh;
+  padding: 10px;
+  /* to keep centered on large screen */
+  
+}
+.note{
+  background-color: rgb(249, 249, 86);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+  white-space: pre-wrap;
+
+}
+.note_footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.note_list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+}
+.note.new{
+  background-color: aqua;
+}
+textarea{
+  border: none;
+  resize: none;
+  background-color: aqua;
+
+}
+textarea:focus{
+  outline: none;
+}
+.save{
+  background-color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.save:hover{
+  background-color: rgba(240, 248, 255, 0.636);
+  cursor: pointer;
+}
+.delete_icon{
+  cursor: pointer;
+  
+}
+.delete_icon:hover{
+  color: red;
+}
+.search_container{
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 50%,  rgba(131,58,180,1) 100%);
+  /* background-color: rgba(176, 189, 201); */
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 1em;
+}
+.search_container input{
+  border: none;
+  /* background-color: rgba(176, 189, 201); */
+  background-color: transparent;
+}
+.search_container input:focus{
+  outline: none;
+}
+.header_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: 40px;
+  /* margin-bottom: .5em;
+  color: white; */
+}
+.darkmode{
+  background-color: black;
+}
+.darkmode label{
+  color: white;
+}
+.darkmode span.header_span{
+  color: white;
+}
+.header_span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
